@@ -227,7 +227,7 @@ class RecognitonAndTracking ():
         text = 'Average FPS: {:.2f}'.format(fps)
         cv2.putText(frame, text, (10, 20), font, 0.5, (0, 255, 0), 2)
         # put frame in queue
-        if process is not None:
+        if process is not None: 
           frameQueue.put(frame)
           
         cv2.imshow('Face Recognition and Pedestrian Tracking', frame)
